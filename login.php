@@ -1,26 +1,23 @@
-<?php  include "includes/db.php"; ?>
-<?php  include "includes/header.php"; ?>
+<?php include "includes/db.php"; ?>
+<?php include "includes/header.php"; ?>
 
 
 <?php
 
-		checkIfUserIsLoggedInAndRedirect('/cms/admin');
+checkIfUserIsLoggedInAndRedirect('/cms-with-translation-feature/admin');
 
 
-		if(ifItIsMethod('post')){
+if (ifItIsMethod('post')) {
 
-			if(isset($_POST['username']) && isset($_POST['password'])){
+	if (isset($_POST['username']) && isset($_POST['password'])) {
 
-				login_user($_POST['username'], $_POST['password']);
-
-
-			}else {
+		login_user($_POST['username'], $_POST['password']);
+	} else {
 
 
-				redirect('/cms/login.php');
-			}
-
-		}
+		redirect('/cms-with-translation-feature/login.php');
+	}
+}
 
 
 
@@ -33,7 +30,7 @@
 
 <!-- Navigation -->
 
-<?php  include "includes/navigation.php"; ?>
+<?php include "includes/navigation.php"; ?>
 
 
 <!-- Page Content -->
@@ -89,6 +86,6 @@
 
 	<hr>
 
-	<?php include "includes/footer.php";?>
+	<?php include "includes/footer.php"; ?>
 
 </div> <!-- /.container -->
