@@ -73,8 +73,8 @@ INSERT INTO `comments` (`
 comment_id`,
 `comment_post_id
 `, `comment_author`, `comment_email`, `comment_content`, `comment_status`, `comment_date`) VALUES
-(2, 139, 'Shambhavi', 'Shambhavi@gmail.com', 'hello', 'unapproved', '2018-01-19'),
-(3, 139, 'Shambhavi', 'Shambhavi@gmail.com', 'hellosss', 'unapproved', '2018-01-19');
+(2, 139, 'Shambhavi', 'shambhavi@gmail.com', 'hello', 'unapproved', '2018-01-19'),
+(3, 139, 'Shambhavi', 'shambhavi@gmail.com', 'hellosss', 'unapproved', '2018-01-19');
 
 -- --------------------------------------------------------
 
