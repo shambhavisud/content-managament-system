@@ -7,8 +7,10 @@
 -- Server version: 5.6.33
 -- PHP Version: 7.0.12
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET SQL_MODE
+= "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone
+= "+00:00";
 
 --
 -- Database: `cms`
@@ -20,17 +22,24 @@ SET time_zone = "+00:00";
 -- Table structure for table `categories`
 --
 
-CREATE TABLE `categories` (
-  `cat_id` int(3) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `cat_title` varchar(255) NOT NULL
+CREATE TABLE `categories`
+(
+  `cat_id` int
+(3) NOT NULL,
+  `user_id` int
+(11) NOT NULL,
+  `cat_title` varchar
+(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `categories`
 --
 
-INSERT INTO `categories` (`cat_id`, `user_id`, `cat_title`) VALUES
+INSERT INTO `categories` (`
+cat_id`,
+`user_id
+`, `cat_title`) VALUES
 (48, 29, 'PHP'),
 (52, 28, 'Javascript');
 
@@ -40,13 +49,19 @@ INSERT INTO `categories` (`cat_id`, `user_id`, `cat_title`) VALUES
 -- Table structure for table `comments`
 --
 
-CREATE TABLE `comments` (
-  `comment_id` int(3) NOT NULL,
-  `comment_post_id` int(3) NOT NULL,
-  `comment_author` varchar(255) NOT NULL,
-  `comment_email` varchar(255) NOT NULL,
+CREATE TABLE `comments`
+(
+  `comment_id` int
+(3) NOT NULL,
+  `comment_post_id` int
+(3) NOT NULL,
+  `comment_author` varchar
+(255) NOT NULL,
+  `comment_email` varchar
+(255) NOT NULL,
   `comment_content` text NOT NULL,
-  `comment_status` varchar(255) NOT NULL,
+  `comment_status` varchar
+(255) NOT NULL,
   `comment_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -54,9 +69,12 @@ CREATE TABLE `comments` (
 -- Dumping data for table `comments`
 --
 
-INSERT INTO `comments` (`comment_id`, `comment_post_id`, `comment_author`, `comment_email`, `comment_content`, `comment_status`, `comment_date`) VALUES
-(2, 139, 'Edwin', 'edwin@gmail.com', 'hello', 'unapproved', '2018-01-19'),
-(3, 139, 'Edwin', 'edwin@gmail.com', 'hellosss', 'unapproved', '2018-01-19');
+INSERT INTO `comments` (`
+comment_id`,
+`comment_post_id
+`, `comment_author`, `comment_email`, `comment_content`, `comment_status`, `comment_date`) VALUES
+(2, 139, 'Shambhavi', 'Shambhavi@gmail.com', 'hello', 'unapproved', '2018-01-19'),
+(3, 139, 'Shambhavi', 'Shambhavi@gmail.com', 'hellosss', 'unapproved', '2018-01-19');
 
 -- --------------------------------------------------------
 
@@ -64,17 +82,24 @@ INSERT INTO `comments` (`comment_id`, `comment_post_id`, `comment_author`, `comm
 -- Table structure for table `likes`
 --
 
-CREATE TABLE `likes` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `post_id` int(11) NOT NULL
+CREATE TABLE `likes`
+(
+  `id` int
+(11) NOT NULL,
+  `user_id` int
+(11) NOT NULL,
+  `post_id` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `likes`
 --
 
-INSERT INTO `likes` (`id`, `user_id`, `post_id`) VALUES
+INSERT INTO `likes` (`
+id`,
+`user_id
+`, `post_id`) VALUES
 (18, 28, 140),
 (22, 29, 139),
 (24, 28, 147),
@@ -88,29 +113,48 @@ INSERT INTO `likes` (`id`, `user_id`, `post_id`) VALUES
 -- Table structure for table `posts`
 --
 
-CREATE TABLE `posts` (
-  `post_id` int(3) NOT NULL,
-  `post_category_id` int(3) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `post_title` varchar(255) NOT NULL,
-  `post_author` varchar(255) NOT NULL,
-  `post_user` varchar(255) NOT NULL,
+CREATE TABLE `posts`
+(
+  `post_id` int
+(3) NOT NULL,
+  `post_category_id` int
+(3) NOT NULL,
+  `user_id` int
+(11) NOT NULL,
+  `post_title` varchar
+(255) NOT NULL,
+  `post_author` varchar
+(255) NOT NULL,
+  `post_user` varchar
+(255) NOT NULL,
   `post_date` date NOT NULL,
   `post_image` text NOT NULL,
   `post_content` text NOT NULL,
-  `post_tags` varchar(255) NOT NULL,
-  `post_comment_count` varchar(255) NOT NULL,
-  `post_status` varchar(255) NOT NULL DEFAULT 'draft',
-  `post_views_count` int(11) NOT NULL,
-  `likes` int(11) NOT NULL
+  `post_tags` varchar
+(255) NOT NULL,
+  `post_comment_count` varchar
+(255) NOT NULL,
+  `post_status` varchar
+(255) NOT NULL DEFAULT 'draft',
+  `post_views_count` int
+(11) NOT NULL,
+  `likes` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`post_id`, `post_category_id`, `user_id`, `post_title`, `post_author`, `post_user`, `post_date`, `post_image`, `post_content`, `post_tags`, `post_comment_count`, `post_status`, `post_views_count`, `likes`) VALUES
-(161, 48, 28, 'This is post 28', '', 'edwin', '2019-01-15', 'edwin.jpg', '<p>HELLO</p>', 'HELLOssssfsdgfsdfds', '', 'published', 304, 2);
+INSERT INTO `posts` (`
+post_id`,
+`post_category_id`,
+`user_id`,
+`post_title`,
+`post_author`,
+`post_user
+`, `post_date`, `post_image`, `post_content`, `post_tags`, `post_comment_count`, `post_status`, `post_views_count`, `likes`) VALUES
+(161, 48, 28, 'This is post 28', '', 'Shambhavi', '2019-01-15', 'Shambhavi.jpg', '<p>HELLO</p>', 'HELLOssssfsdgfsdfds', '', 'published', 304, 2);
 
 -- --------------------------------------------------------
 
@@ -118,16 +162,25 @@ INSERT INTO `posts` (`post_id`, `post_category_id`, `user_id`, `post_title`, `po
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `user_id` int(3) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `user_password` varchar(255) NOT NULL,
-  `user_firstname` varchar(255) NOT NULL,
-  `user_lastname` varchar(255) NOT NULL,
-  `user_email` varchar(255) NOT NULL,
+CREATE TABLE `users`
+(
+  `user_id` int
+(3) NOT NULL,
+  `username` varchar
+(255) NOT NULL,
+  `user_password` varchar
+(255) NOT NULL,
+  `user_firstname` varchar
+(255) NOT NULL,
+  `user_lastname` varchar
+(255) NOT NULL,
+  `user_email` varchar
+(255) NOT NULL,
   `user_image` text NOT NULL,
-  `user_role` varchar(255) NOT NULL,
-  `randSalt` varchar(255) NOT NULL DEFAULT '$2y$10$iusesomecrazystrings22',
+  `user_role` varchar
+(255) NOT NULL,
+  `randSalt` varchar
+(255) NOT NULL DEFAULT '$2y$10$iusesomecrazystrings22',
   `token` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -135,8 +188,11 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `user_password`, `user_firstname`, `user_lastname`, `user_email`, `user_image`, `user_role`, `randSalt`, `token`) VALUES
-(28, 'edwin', '$2y$12$P.yw9tLo.n3vmvKDCaM9NuefADQyI.LDEEa0gCo2o2fVvUxjS3c1q', '', '', 'edwin@edwindiaz.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
+INSERT INTO `users` (`
+user_id`,
+`username
+`, `user_password`, `user_firstname`, `user_lastname`, `user_email`, `user_image`, `user_role`, `randSalt`, `token`) VALUES
+(28, 'Shambhavi', '$2y$12$P.yw9tLo.n3vmvKDCaM9NuefADQyI.LDEEa0gCo2o2fVvUxjS3c1q', '', '', 'Shambhavi@Shambhavidiaz.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
 (29, 'maria', '$2y$12$6sF0taLKFdUwOMhzDJSN8eZ1hmBdRjdJ.Ctf7uHYsNSRV94DYQe/2', '', '', 'maria@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
 (30, 'suavemente', '$2y$12$dYPDTqVF9zRw0ipwNeobQeO0/qcptLjYLzbfUCjJScuDMwAj49.z6', '', '', 'suavemente@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
 (31, 'sola', '$2y$12$yqI7MP6OnAYtIYxfXxJxKOe8gCzvW4pWVYToLjXM6/PIQJ98Rlthy', '', '', 'sola@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
@@ -150,17 +206,24 @@ INSERT INTO `users` (`user_id`, `username`, `user_password`, `user_firstname`, `
 -- Table structure for table `users_online`
 --
 
-CREATE TABLE `users_online` (
-  `id` int(11) NOT NULL,
-  `session` varchar(255) NOT NULL,
-  `time` int(11) NOT NULL
+CREATE TABLE `users_online`
+(
+  `id` int
+(11) NOT NULL,
+  `session` varchar
+(255) NOT NULL,
+  `time` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users_online`
 --
 
-INSERT INTO `users_online` (`id`, `session`, `time`) VALUES
+INSERT INTO `users_online` (`
+id`,
+`session
+`, `time`) VALUES
 (44, '', 1447434996),
 (45, 's47g806mg6788i92u5ogm6kqi4', 1447441570),
 (46, '72clfovqk7vo2p8fiii26tkmr4', 1447461586),
@@ -222,38 +285,45 @@ INSERT INTO `users_online` (`id`, `session`, `time`) VALUES
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
-  ADD PRIMARY KEY (`cat_id`);
+ADD PRIMARY KEY
+(`cat_id`);
 
 --
 -- Indexes for table `comments`
 --
 ALTER TABLE `comments`
-  ADD PRIMARY KEY (`comment_id`);
+ADD PRIMARY KEY
+(`comment_id`);
 
 --
 -- Indexes for table `likes`
 --
 ALTER TABLE `likes`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY
+(`id`);
 
 --
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
-  ADD PRIMARY KEY (`post_id`);
+ADD PRIMARY KEY
+(`post_id`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`),
-  ADD UNIQUE KEY `username` (`username`);
+ADD PRIMARY KEY
+(`user_id`),
+ADD UNIQUE KEY `username`
+(`username`);
 
 --
 -- Indexes for table `users_online`
 --
 ALTER TABLE `users_online`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY
+(`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -263,29 +333,35 @@ ALTER TABLE `users_online`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `cat_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `cat_id` int
+(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 --
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `comment_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `comment_id` int
+(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
+  MODIFY `post_id` int
+(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `user_id` int
+(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `users_online`
 --
 ALTER TABLE `users_online`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `id` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
