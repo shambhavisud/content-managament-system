@@ -192,7 +192,7 @@ INSERT INTO `users` (`
 user_id`,
 `username
 `, `user_password`, `user_firstname`, `user_lastname`, `user_email`, `user_image`, `user_role`, `randSalt`, `token`) VALUES
-(28, 'Shambhavi', '$2y$12$P.yw9tLo.n3vmvKDCaM9NuefADQyI.LDEEa0gCo2o2fVvUxjS3c1q', '', '', 'Shambhavi@Shambhavidiaz.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
+(28, 'Shambhavi', '$2y$12$P.yw9tLo.n3vmvKDCaM9NuefADQyI.LDEEa0gCo2o2fVvUxjS3c1q', '', '', 'Shambhavi@shambhavisud.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
 (29, 'maria', '$2y$12$6sF0taLKFdUwOMhzDJSN8eZ1hmBdRjdJ.Ctf7uHYsNSRV94DYQe/2', '', '', 'maria@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
 (30, 'suavemente', '$2y$12$dYPDTqVF9zRw0ipwNeobQeO0/qcptLjYLzbfUCjJScuDMwAj49.z6', '', '', 'suavemente@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
 (31, 'sola', '$2y$12$yqI7MP6OnAYtIYxfXxJxKOe8gCzvW4pWVYToLjXM6/PIQJ98Rlthy', '', '', 'sola@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystrings22', ''),
