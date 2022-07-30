@@ -51,7 +51,7 @@ if ($stmt = mysqli_prepare($connection, 'SELECT username, user_email, token FROM
 
                 if (mysqli_stmt_affected_rows($stmt) >= 1) {
 
-                    redirect('/cms/login.php');
+                    redirect('/cms-with-translation-feature/login.php');
                 }
 
                 mysqli_stmt_close($stmt);

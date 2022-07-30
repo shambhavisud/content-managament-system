@@ -80,7 +80,7 @@ if (isset($_POST['unliked'])) {
                     </p>
                     <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date ?></p>
                     <hr>
-                    <img class="img-responsive" src="/cms/images/<?php echo $post_image; ?>" alt="">
+                    <img class="img-responsive" src="/cms-with-translation-feature/images/<?php echo $post_image; ?>" alt="">
                     <hr>
                     <p><?php echo $post_content ?></p>
 
@@ -100,7 +100,7 @@ if (isset($_POST['unliked'])) {
                     <?php  } else { ?>
 
                         <div class="row">
-                            <p class="pull-right login-to-post">You need to <a href="/cms/login.php">Login</a> to like </p>
+                            <p class="pull-right login-to-post">You need to <a href="/cms-with-translation-feature/login.php">Login</a> to like </p>
                         </div>
                     <?php }
                     ?>
@@ -226,7 +226,7 @@ if (isset($_POST['unliked'])) {
             // LIKING
             $('.like').click(function() {
                 $.ajax({
-                    url: "/cms/post.php?p_id=<?php echo $the_post_id; ?>",
+                    url: "/post.php?p_id=<?php echo $the_post_id; ?>",
                     type: 'post',
                     data: {
                         'liked': 1,
@@ -240,7 +240,7 @@ if (isset($_POST['unliked'])) {
 
             $('.unlike').click(function() {
                 $.ajax({
-                    url: "/cms/post.php?p_id=<?php echo $the_post_id; ?>",
+                    url: "/cms-with-translation-feature/post.php?p_id=<?php echo $the_post_id; ?>",
                     type: 'post',
                     data: {
                         'unliked': 1,

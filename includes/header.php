@@ -14,12 +14,12 @@
     <title>Blog Home - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/cms/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/cms-with-translation-feature/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/cms/css/blog-home.css" rel="stylesheet">
+    <link href="/cms-with-translation-feature/css/blog-home.css" rel="stylesheet">
 
-    <link href="/cms/css/styles.css" rel="stylesheet">
+    <link href="/cms-with-translation-feature/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,17 +29,14 @@
     <![endif]-->
 
     <style>
-
-
-
-        a.unlike, a.like, p.likes, p.login-to-post {
+        a.unlike,
+        a.like,
+        p.likes,
+        p.login-to-post {
 
             font-size: 22px !important;
 
         }
-
-
-
     </style>
 
 </head>

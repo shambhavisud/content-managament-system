@@ -27,7 +27,7 @@
                         $cat_title = $row['cat_title'];
                         $cat_id = $row['cat_id'];
 
-                        echo "<li><a href='/cms/category/{$cat_id}'>{$cat_title}</a></li>";
+                        echo "<li><a href='/cms-with-translation-feature/category/{$cat_id}'>{$cat_title}</a></li>";
                     }
 
                     ?>
@@ -36,11 +36,11 @@
 
 
                        <li>
-                           <a href="/cms/admin">Admin</a>
+                           <a href="/cms-with-translation-feature/admin">Admin</a>
                        </li>
 
                        <li>
-                           <a href="/cms/includes/logout.php">Logout</a>
+                           <a href="/cms-with-translation-feature/includes/logout.php">Logout</a>
                        </li>
 
 
@@ -48,7 +48,7 @@
 
 
                        <li>
-                           <a href="/cms/login.php">Login</a>
+                           <a href="/cms-with-translation-feature/login.php">Login</a>
                        </li>
 
 
@@ -59,7 +59,7 @@
 
 
                    <li>
-                       <a href="/cms/registration">Registration</a>
+                       <a href="/cms-with-translation-feature/registration">Registration</a>
                    </li>
 
 
@@ -71,7 +71,7 @@
 
                             $the_post_id = $_GET['p_id'];
 
-                            echo "<li><a href='/cms/admin/posts.php?source=edit_post&p_id={$the_post_id}'>Edit Post</a></li>";
+                            echo "<li><a href='/cms-with-translation-feature/admin/posts.php?source=edit_post&p_id={$the_post_id}'>Edit Post</a></li>";
                         }
                     }
 
